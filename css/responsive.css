@@ -1,0 +1,220 @@
+/*File này xử lý giao diện responsive*/ 
+
+/*Màn hình di động*/
+
+@media all and (max-width: 767px) {
+    .main-slide .main-slide__control span {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+    }
+
+    .why-us .why-us__item {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .product-box .section-title span {
+        display: block;
+    }
+
+    .product-box .product-box__list .product-box__control span {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+    }
+
+    .location-box .location-box__item:last-child {
+        padding: 15px;
+    }
+
+    .news-box .news-box__item {
+        margin-bottom: 15px;
+    }
+
+    .partner-box .partner-box--item {
+        margin-bottom: 10px;
+    }
+
+    .contact-box .contact-box--form .form-group button {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .footer .footer-inner .footer-inner--logo {
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .footer .footer-inner .footer-item {
+        max-width: 100%;
+    }
+
+    .section-box .section-title {
+        padding: 15px 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .location-box .location-box__item h2 {
+        font-size: 30px;
+    }
+
+}
+/*Màn hình Ipad*/
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .why-us ,.news-box ,.footer-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .why-us .why-us__item {
+        padding-right: 0;
+    }
+
+    .contact-box .contact-box--form {
+        padding: 50px 150px;
+    }
+
+    .contact-box .contact-box--form .form-group button {
+        width: 95%;
+    }
+
+    .contact-box .contact-box--form .contact-box--form__btn {
+        padding-top: 10px;
+    }
+}
+
+/*Màn hình máy tính nhỏ (Desktop Small)*/
+
+@media all and (min-width: 993px) and (max-width: 1200px) {
+    .why-us .why-us__item {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .contact-box .contact-box--form {
+        padding: 25px 40px;
+    }
+
+    .contact-box .contact-box--form .section-title {
+        font-size: 25px;
+    }
+
+    .contact-box .contact-box--form .form-group button {
+        padding: 10px 20px;
+    }
+
+    .contact-box .contact-box--form .contact-box--form__hotline span:first-child {
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+    .contact-box .contact-box--form .contact-box--form__hotline span:last-child {
+        font-size: 16px;
+    }
+
+    .contact-box .contact-box--form .contact-box--form__hotline::before {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer .footer-item:not(.footer__subscribe-box) {
+        max-width: 100%;
+    }
+}
+
+/*Media query chung*/
+@media all and (max-width: 1200px) {
+    /* .header {
+        display: none;
+    } */
+    .show-mobile{
+        display: block;
+    }
+
+    .header {
+        padding: 10px 15px;
+    }
+
+    .header .header__logo img {
+        position: static;
+        max-height: 80%;
+    }
+
+    .header .header__logo {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__hotline {
+        display: none;
+    }
+
+    .header__nav {
+        height: 0;
+        padding: 0 !important;
+        transition: all 0.4s linear;
+    }
+
+    .header--toggle, .header--search {
+        display: flex;
+        align-items: center;
+    }
+
+    .header--toggle label {
+        font-size: 20px;
+        padding: 5px 10px;
+        background: transparent;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+    }
+
+    .header--search {
+        justify-content: flex-end;
+    }
+
+    .header .header__nav ul li:last-child {
+        display: none;
+    }
+
+    .header .header__nav ul li {
+        display: block;
+        transform: none;
+    }
+
+    .header .header__nav ul li+ li {
+        border-top: 1px dashed #ececec;
+    }
+
+    .header .header__nav ul li a {
+        padding: 10px !important;
+        color: #fff;
+    }
+
+    .header .header__nav {
+        background: var(--primary-color);
+    }
+
+    #toggle-menu {
+        display: none;
+    }
+
+    #toggle-menu:checked ~ .header__nav {
+        height: 100%;
+    }
+
+    .why-us, .news-box, .footer-inner  {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
